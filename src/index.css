@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+*{
+ font-family: poppins;
+}
+
+body{
+  background:linear-gradient(rgb(0, 0, 0),rgb(3, 19, 3));
+  min-height: 100vh;
+}
+
+.content-full{
+  width: 100%;
+}
+.content-wrapper{
+  max-width: 1420px;
+  margin: 0 auto;
+  padding-inline: 0.5rem;
+}
+input[type="checkbox" i] {
+  background-color: green !important;
+  border: 1px solid white !important;
+}
