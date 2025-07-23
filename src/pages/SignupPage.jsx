@@ -1,11 +1,11 @@
 import React from 'react'
+import SignUpComponent from '../components/SignUpComponent'
 
-import Signup from '../components/Signup.jsx'
 
 function SignupPage() {
   return (
     <>
-        <Signup/>
+        <SignUpComponent/>
 
     </>
   )

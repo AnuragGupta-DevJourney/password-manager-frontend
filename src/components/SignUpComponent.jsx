@@ -8,7 +8,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 
-function Signup() {
+function SignUpComponent() {
   const upperOrLowerRegex = /(?=.*[a-z])|(?=.*[A-Z])/;
   const emailWithDotRegex = /^[^@]+@[^@]+\.[^@]+$/;
 
@@ -205,4 +205,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default SignUpComponent;
