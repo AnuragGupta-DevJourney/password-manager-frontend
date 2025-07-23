@@ -72,9 +72,10 @@ const router = createBrowserRouter([
     path: "/change-password",
     element: (
       <PrivateRoute>
-        <Suspense fallback={<Loader/>} >
-        <UpadtePasswordPage />  
-        </Suspense>?
+        <Suspense fallback={<Loader />}>
+          <UpadtePasswordPage />
+        </Suspense>
+        ?
       </PrivateRoute>
     ),
   },
@@ -82,9 +83,10 @@ const router = createBrowserRouter([
     path: "/reset-password-link",
     element: (
       <>
-        <Suspense fallback={<Loader/>} >
-        <ResetPasswordLink />  
-        </Suspense>?
+        <Suspense fallback={<Loader />}>
+          <ResetPasswordLink />
+        </Suspense>
+        ?
       </>
     ),
   },
@@ -92,9 +94,10 @@ const router = createBrowserRouter([
     path: "/reset-password-page/:token",
     element: (
       <>
-        <Suspense fallback={<Loader/>} >
-        <ResetPasswordPage />  
-        </Suspense>?
+        <Suspense fallback={<Loader />}>
+          <ResetPasswordPage />
+        </Suspense>
+        ?
       </>
     ),
   },

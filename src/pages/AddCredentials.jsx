@@ -129,6 +129,7 @@ function AddCredentials() {
                 placeholder="Enter your password"
                 className="border border-slate-500 px-2 py-1 rounded-md"
                 onChange={handleCredentialFormInput}
+                required
               />
               <i
                 className="absolute bottom-2 right-5 cursor-pointer"
