@@ -37,8 +37,11 @@ function ResetPasswordLink() {
     );
 
     if (response.status === 200) {
-      toast.success("Password reset link has been sent to your email")
+      toast.success("Password reset link has been sent to your email" , {duration : 1400})
       setLoading(false)
+      setTimeout(() => {
+        navigate("/reset-password-verify")
+      } , 1500)
     }
     else{
       toast.error("Unable to send password link right now")

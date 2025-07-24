@@ -65,7 +65,7 @@ function ResetPasswordPage() {
       console.log("Internal Server Error while signup the user!", error);
       console.log("ERRO MESG", error.response, error.status);
       if (error.status === 400) {
-        toast.error("Invalid or expired token");
+        toast.error("Invalid or expired key");
       }
     }
   };

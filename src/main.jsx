@@ -18,6 +18,7 @@ import UpadtePasswordPage from "./pages/UpadtePasswordPage.jsx";
 import Error from "./components/Error.jsx";
 import ResetPasswordLink from "./components/ResetPasswordLink.jsx";
 import ResetPasswordPage from "./components/ResetPasswordPage.jsx";
+import VerifyResetPasswordKey from "./components/VerifyResetPasswordKey.jsx";
 
 const AddCredentials = lazy(() => import("./pages/AddCredentials.jsx"));
 const EditCredentialPage = lazy(() => import("./pages/EditCredentialPage.jsx"));
@@ -85,6 +86,17 @@ const router = createBrowserRouter([
       <>
         <Suspense fallback={<Loader />}>
           <ResetPasswordLink />
+        </Suspense>
+        ?
+      </>
+    ),
+  },
+  {
+    path: "/reset-password-verify",
+    element: (
+      <>
+        <Suspense fallback={<Loader />}>
+          <VerifyResetPasswordKey />
         </Suspense>
         ?
       </>
